@@ -1,12 +1,16 @@
-//
-//  header.h
-//  Activity29
-//
-//  Created by Chatchapong Thuaypha on 11/6/24.
-//
+#ifndef HEADER_H
+#define HEADER_H
+#include <string>
 
-#ifndef header_h
-#define header_h
+using namespace std;
 
+struct Movie {
+    string episode;
+    int year;
+};
 
-#endif /* header_h */
+namespace StringParser {
+    Movie parseMovieString(const string& data);
+}
+
+#endif

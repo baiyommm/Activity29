@@ -1,14 +1,15 @@
-//
-//  main.cpp
-//  Activity29
-//
-//  Created by Chatchapong Thuaypha on 11/6/24.
-//
-
 #include <iostream>
+#include "header.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+using namespace StringParser;
+
+int main() {
+    
+    string data = "24 S2, 2014";
+    Movie movie = parseMovieString(data);
+
+    cout << "Episode: " << movie.episode << ", Year: " << movie.year << endl;
+
     return 0;
 }
